@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.CandidateMainMenuHandler">
+   <children>
+      <HBox prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: silver;">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <Label alignment="CENTER" prefHeight="50.0" prefWidth="335.0" text="Candidate">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onMouseClicked="#clickOnLogout" prefHeight="30.0" prefWidth="65.0" style="-fx-background-color: #838996;" text="Logout">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onMouseClicked="#clickOnPersonalInformation" prefHeight="30.0" prefWidth="235.0" style="-fx-background-color: #838996;" text="Change Personal Information">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="80.0" top="20.0" />
+         </VBox.margin>
+      </Button>
+      <Button mnemonicParsing="false" onMouseClicked="#clickOnCredentials" prefHeight="30.0" prefWidth="235.0" style="-fx-background-color: #838996;" text="Change Username/Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="80.0" top="20.0" />
+         </VBox.margin>
+      </Button>
+      <Button mnemonicParsing="false" onMouseClicked="#clickOnSearchApplyJob" prefHeight="30.0" prefWidth="235.0" style="-fx-background-color: #838996;" text="Search/Apply for Job">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="80.0" top="20.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

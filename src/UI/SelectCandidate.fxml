@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.SelectCandidateHandler">
+   <children>
+      <HBox style="-fx-background-color: silver;">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#clickOnBack" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #838996;" text="Back">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="290.0" text="Select Candidates" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#clickOnSearch" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #838996;" text="Search">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <TableView prefHeight="350.0" prefWidth="400.0">
+        <columns>
+          <TableColumn editable="false" prefWidth="93.0" text="InterviewID" />
+          <TableColumn editable="false" prefWidth="158.0" text="Resume" />
+            <TableColumn prefWidth="147.0" text="Remarks" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>
